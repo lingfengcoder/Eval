@@ -8,4 +8,4 @@
 <<<<<<<<<<<<<<<日志>>>>>>>>>>>>>
 
 2018年4月5日12:01:40
-二维码功能实现
+二维码功能实现，需要ionic官方二维码扫描插件https://ionicframework.com/docs/native/qr-scanner/
