@@ -1,3 +1,117 @@
 page-qr {
-
+        .toolbar-ios,
+        .toolbar-md {
+          padding: 4px;
+          min-height: 44px;
+          text-align: center;
+        }
+      
+        .back-button-md {
+          margin: 0;
+          min-width: 44px;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+        }
+      
+        .qrscanner {
+          background: transparent none !important;
+      
+          &-area {
+            width: 100%;
+            height: 85%;
+            // background: transparent none !important;
+            background-size: contain;
+          }
+        }
+      
+        .through-line {
+          left: 10%;
+          width: 80%;
+          height: 2px;
+          background: red;
+          position: absolute;
+          // top: 50%;
+          animation: myfirst 5s linear infinite alternate;
+        }
+        @keyframes myfirst {
+          0% {
+            background: red;
+            top: 14%;
+          }
+      
+          25% {
+            background: yellow;
+            top: 32%;
+          }
+      
+          50% {
+            background: blue;
+            top: 50%;
+          }
+      
+          75% {
+            background: green;
+            top: 68%;
+          }
+      
+          100% {
+            background: red;
+            top: 86%;
+          }
+        }
+      
+        .button-bottom {
+          width: 128px;
+          position: absolute;
+          left: 50%;
+          bottom: 80px;
+          margin-left: -64px;
+      
+          .icon-camera {
+            float: left;
+          }
+        }
+      
+        .father {
+          position: absolute;
+          top: 140px;
+          width: 60%;
+          margin-left: 20%;
+        }
+      
+        .daughter {
+          width: 100%;
+          height: 0;
+          padding-top: 100%;
+          background-color: #aaaaaa9c;
+          // background: #ff75003d;
+          background: linear-gradient(to left, #4A8CFF, #4A8CFF) left top no-repeat, linear-gradient(to bottom, #4A8CFF, #4A8CFF) left top no-repeat, linear-gradient(to left, #4A8CFF, #4A8CFF) right top no-repeat, linear-gradient(to bottom, #4A8CFF, #4A8CFF) right top no-repeat, linear-gradient(to left, #4A8CFF, #4A8CFF) left bottom no-repeat, linear-gradient(to bottom, #4A8CFF, #4A8CFF) left bottom no-repeat, linear-gradient(to left, #4A8CFF, #4A8CFF) right bottom no-repeat, linear-gradient(to left, #4A8CFF, #4A8CFF) right bottom no-repeat;
+          background-size: 2px 20px, 20px 2px, 2px 20px, 20px 2px;
+        }
+      
+        .bar-button-clear-ios-default:hover:not(.disable-hover),
+        .bar-button-clear-md-default:hover:not(.disable-hover),
+        .bar-button-default-ios:hover:not(.disable-hover),
+        .bar-button-default-md:hover:not(.disable-hover),
+        .bar-button-ios-default:hover:not(.disable-hover),
+        .bar-button-md-default:hover:not(.disable-hover) {
+          color: #000;
+        }
+      
+        .item-datetime .label-ios,
+        .item-datetime .label-md,
+        .item-input .label-ios,
+        .item-input .label-md,
+        .item-select .label-ios,
+        .item-select .label-md {
+          color: #000;
+        }
+      
+        .bar-button-clear-ios-default,
+        .bar-button-default-ios,
+        .bar-button-default.bar-button-ios-default {
+          color: #000;
+          background-color: transparent;
+        }
+      
 }

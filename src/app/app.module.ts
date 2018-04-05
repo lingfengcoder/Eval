@@ -3,13 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
+import { AboutPage } from '../pages/main/about/about';
+import { ContactPage } from '../pages/main/contact/contact';
+import { HomePage } from '../pages/main/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
+//插件
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { QRScanner} from '@ionic-native/qr-scanner';
+
+//组件
+
+//指令
 
 @NgModule({
   declarations: [
@@ -34,6 +40,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    QRScanner,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
